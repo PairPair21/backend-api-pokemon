@@ -12,7 +12,7 @@ const getScorePokemon = require("./src/getScorePokemon");
 // app.use(cors());
 app.use(bodyParser.json());
 app.use(function (req, res, next) {
-  res.Header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE");
   res.header(
     "Access-Control-Allow-Headers",
