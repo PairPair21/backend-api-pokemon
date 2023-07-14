@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const PORT = process.env || 8080;
+const PORT = process.env.PORT || 8080;
 const register = require("./src/register");
 const login = require("./src/login");
 const votePokemon = require("./src/votepokemon");
